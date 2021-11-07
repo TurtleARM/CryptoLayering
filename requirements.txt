@@ -1,0 +1,5 @@
+numpy
+configparser
+Bybit
+jsonschema<4.0
+pybit
