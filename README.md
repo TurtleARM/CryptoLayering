@@ -29,6 +29,7 @@ When creating new API keys, make sure the options *Enable Reading*, *Enable Spot
 
 As for Bybit, its testnet is available at https://testnet.bybit.com/ and its configuration works pretty much the same way as Binance.
 **Execution example in *constant* mode:**
+
 ---
 
 ```html
@@ -86,7 +87,7 @@ Done
 Notes:
 - Keep the executable and its config file in the same directory.
 - Values in square brackets are the default ones.
-- Support for more platforms is coming soon
+- Support for more platforms is coming soon.
 
 **Donations**
 ---
