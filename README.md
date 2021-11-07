@@ -1,7 +1,7 @@
 ***Crypto Layering***
 ---
 
-I am not affiliated with Binance, use at your own risk.
+I am not affiliated with Binance or Bybit, use at your own risk.
 
 This tool implements the library [python-binance](https://github.com/sammchardy/python-binance) to place an arbitrary number of limit orders in a specific price interval.
 
