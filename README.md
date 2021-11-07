@@ -12,7 +12,7 @@ The interval is divided into equal parts and orders can be distributed in three 
     the user can choose a constant increment to be added to the base order size for each order, total order size increases as the order price gets further from the market price.
     This could be useful if you want to long and you're afraid that the price could get far from your entry
 - incrementalFalling: 
-    like incrementalRising, although total order size decreases as the order price gets further from the market price.
+    like incrementalRising, though the total order size decreases as the order price gets further from the market price.
     This could be useful if you're trying to aim at a specific entry price
 
 **Dependencies**
