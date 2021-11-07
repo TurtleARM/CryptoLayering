@@ -17,8 +17,8 @@ is_testnet = str2bool(bybit_config['Testnet'])
 margin_type = bybit_config['MarginType'].upper()
 inverse = True
 print('Connecting to Bybit...')
-client = bybit.bybit(test=True, api_key=api_key, api_secret=api_secret)
-session = HTTP("https://api-testnet.bybit.com", api_key=api_key, api_secret=api_secret)
+client = bybit.bybit(test=is_testnet, api_key=api_key, api_secret=api_secret)
+session = HTTP("https://api-testnet.bybit.com", api_key=api_key, api_secret=api_secret) if is_testnet else HTTP("https://api.bybit.com", api_key=api_key, api_secret=api_secret)
 info = client.Market.Market_symbolInfo().result()
 symbol = input('Trading pair [BTCUSD]: ').upper() or 'BTCUSD'
 if symbol.endswith('USDT'):

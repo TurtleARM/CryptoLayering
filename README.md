@@ -9,24 +9,25 @@ The interval is divided into equal parts and orders can be distributed in three 
 - constant:
     the same amount of crypto is repeated for each order
 - incrementalRising:
-    the user can choose a constant increment to be added to the base order size for each order, total order size increases while getting further from the market price.
+    the user can choose a constant increment to be added to the base order size for each order, total order size increases as the order price gets further from the market price.
     This could be useful if you want to long and you're afraid that the price could get far from your entry
 - incrementalFalling: 
-    like incrementalRising, although total order size decreases while getting further from market price.
+    like incrementalRising, although total order size decreases as the order price gets further from the market price.
     This could be useful if you're trying to aim at a specific entry price
 
 **Dependencies**
 ---
 ```
-pip3 install numpy configparser
+pip install -r requirements.txt
 ```
 **How to try Crypto Layering**
 ---
 
-You can grab your API key/secret on Binance testnet by signing up at https://testnet.binancefuture.com/, paste them along with '*Testnet = true*' in *config.ini* and Crypto Layering will point to it so you can practice for free.
+You can grab your API key/secret on the Binance testnet by signing up on https://testnet.binancefuture.com/, paste them along with '*Testnet = true*' in *config.ini* and Crypto Layering will point to it so you can practice for free.
 
 When creating new API keys, make sure the options *Enable Reading*, *Enable Spot & Margin Trading* and *Enable Futures* are checked, you can create a pair of official keys by browsing to Profile -> API Management on https://binance.com.
 
+As for Bybit, its testnet is available at https://testnet.bybit.com/ and its configuration works pretty much the same way as Binance.
 **Execution example in *constant* mode:**
 ---
 
@@ -85,7 +86,7 @@ Done
 Notes:
 - Keep the executable and its config file in the same directory.
 - Values in square brackets are the default ones.
-- Support for Bybit and Phemex is coming soon.
+- Support for more platforms is coming soon
 
 **Donations**
 ---
