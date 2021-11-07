@@ -3,7 +3,7 @@
 
 I am not affiliated with Binance or Bybit, use at your own risk.
 
-This tool implements the library [python-binance](https://github.com/sammchardy/python-binance) to place an arbitrary number of limit orders in a specific price interval.
+This tool implements the [python-binance](https://github.com/sammchardy/python-binance) library to place an arbitrary number of limit orders in a specific price interval.
 
 The interval is divided into equal parts and orders can be distributed in three ways:
 - constant:
